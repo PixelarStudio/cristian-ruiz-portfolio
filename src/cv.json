@@ -1,0 +1,227 @@
+{
+  "basics": {
+    "name": "Cristian Javier Ruiz",
+    "label": "Desarrollador Frontend React",
+    "image": "../public/img/perfil5.png",
+    "email": "contacto@cristianruiz.com.ar",
+    "phone": "(+54) 9 11 2402 5510",
+    "url": "https://cristianruiz.com.ar",
+    "summary": "Con un interés profundo por la tecnología y un compromiso constante con el aprendizaje, me especializo en desarrollo web centrado en React, con el objetivo de convertirme en un desarrollador Full Stack. Me dedico a superar nuevos retos utilizando la creatividad y la dedicación para impulsar cada proyecto hacia su presencia en linea.",
+    "location": {
+      "address": "",
+      "postalCode": "1852",
+      "city": "Adrogue",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cj-ruiz",
+        "url": "https://www.linkedin.com/in/cj-ruiz/"
+      },
+      {
+        "network": "GitHub",
+        "username": "PixelarStudio",
+        "url": "https://github.com/PixelarStudio"
+      }
+    ]
+  },
+
+  "works": [
+    {
+      "name": "Ministerio de Seguridad de la Nación",
+      "position": "Inspector",
+      "url": "",
+      "startDate": "2009-08-01",
+      "endDate": null,
+      "summary": "Análisis de expedientes y confección de formularios administración de expedientes en el área, realización de tareas operativas de campo."
+  },
+    {
+      "name": "Zona PC",
+      "position": "Técnico en armado y reparación de PC",
+      "url": "",
+      "startDate": "2006-01-01",
+      "endDate": "2008-11-21",
+      "summary": "Atención al cliente. Mantenimiento de la red.   Reparaciones y Actualizaciones de equipos, asesoramiento en software y hardware."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Escuela de Educación Secundaria N°1 Dr. Alfredo L. Palacios",
+      "url": "",
+      "area": "Bachillerato orientado en Ciencias Sociales de gestión de políticas Públicas.",
+      "studyType": "Bachiller",
+      "startDate": "2021-01-01",
+      "endDate": "2022-12-17",
+      "score": "8.9"
+    }
+  ],
+  "certificates": [
+    {
+      "names": "Desarrollo Web",
+      "date": "2022-05-31",
+      "issuer": "Coder House",
+      "url": "https://www.coderhouse.com/ar/certificados/62a4fc12c15914002056562d?lang=es"
+    },
+    {
+      "names": "JavaScript",
+      "date": "2023-06-29",
+      "issuer": "Coder House",
+      "url": "https://www.coderhouse.com/ar/certificados/64ada4efa37ffc0002b7ebd3?lang=es"
+    },
+    {
+      "names": "React Js",
+      "date": "2024-01-16",
+      "issuer": "Coder House",
+      "url": "https://www.coderhouse.com/ar/certificados/65ab89800ce5dba876443fe6?lang=es"
+    },
+    {
+      "names": "Carrera de Desarrollo Frontend React",
+      "date": "2024-01-16",
+      "issuer": "Coder House",
+      "url": "https://www.coderhouse.com/ar/certificados/65ab89800ce5dbf7e7443ffa?lang=es"
+    }
+  ],
+ 
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermedio",
+      "keywords": [
+        "Estilos",
+        "Frontend",
+        "Flex / Grid"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Firebase",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Firestorage",
+        "Backend",
+        "Aplicaciones Web"
+      ]
+    },
+    {
+      "name": "Sass",
+      "level": "Intermedio",
+      "keywords": [
+        "Hoja de Estilos en Cascada",
+        "Compilador CSS",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "level": "Intermedio",
+      "keywords": [
+        "Sistema de Gestión de Contenidos",
+        "CMS",
+        "WordPress",
+        "Content Management System"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermedio",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermedio",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermedio",
+      "keywords": [
+        "ReactJs",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Idioma Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Básico"
+    }
+  ],
+  
+  "projects": [
+    {
+      "pname": "MigDan.com.ar",
+      "isActive": true,
+      "description": "Sitio de Venta de Piedras",
+      "highlights": [
+        "Sitio realizado en WordPress",
+        "Con Integracion WooCommerce"
+      ],
+      "url": "https://migdan.com.ar"
+    },
+    {
+      "pname": "ProGamer.com.ar",
+      "isActive": true,
+      "description": "Sitio de ecommerce de Venta de Articulos de Informatica, ",
+      "highlights": [
+        "Sitio de Informática",
+        "Sitio realizado en WordPress"
+      ],
+      "url": "https://progamer.com.ar"
+    },
+    {
+      "pname": "PixelarStudio.com",
+      "isActive": true,
+      "description": "Sitio de Servicios de Desarrollo Web",
+      "highlights": [
+        "Retos para cualquier lenguaje"
+      ],
+      "url": "https://pixelarstudio.com"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+import { basics } from "@/cv.json"
+
+import Section from "@/components/Section.astro";
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+---
+
+<Section>
+  <div class="container flex justify-between">
+    <div class="info flex flex-col mt-auto">
+      <h1 class="text-4xl">{name}</h1>
+      <h2 class="text-xl py-3">{label}</h2>
+
+    </div>
+
+    <footer>
+      {
+        email && (
+          <a
+            href={`mailto: ${email}`}
+            title={`Enviar un Correo Electronico a ${name} al correo ${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+        )
+      }
+    </footer>
+
+    <figure>
+      <img src={image} class="w-32 h-32 rounded-full" alt="{name}" />
+    </figure>
+  </div>
+</Section>
+
+<!-- Estilos con Scope propio. -->
+
+<style>
+
+section {
+    max-width: 700px;
+    margin: 0 auto 72px;
+}
+
+</style>

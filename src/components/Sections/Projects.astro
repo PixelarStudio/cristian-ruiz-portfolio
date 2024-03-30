@@ -1,0 +1,10 @@
+---
+import { projects } from "@/cv.json";
+import Section from "../Section.astro";
+---
+
+<Section title="Proyectos">
+  <div>
+    <h1>{projects.map((proj) => <p class="py-2">{proj.pname}</p>)}</h1>
+  </div>
+</Section>
