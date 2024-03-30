@@ -26,7 +26,7 @@ npm run dev
 
 Dentro de este proyecto, encontrarás las siguientes carpetas y archivos, que organizan el código fuente y los recursos del portfolio:
 
-\```text
+```text
 /
 ├── public/
 │   └── img/
@@ -45,7 +45,8 @@ Dentro de este proyecto, encontrarás las siguientes carpetas y archivos, que or
 │   └── pages/
 │       └── index.astro
 └── package.json
-\```
+```
+
 
 ## 🧰 Comandos
 
