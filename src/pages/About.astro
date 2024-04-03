@@ -1,14 +1,13 @@
 ---
 import Section from "../components/Section.astro"
 import { basics } from "@/cv.json";
-const { name, label, image, email, phone, url, summary    } = basics; 
 ---
 
 <Section title="Acerca de mí" >
     <div class="flex-start mx-auto p-0 bg-white dark:bg-gray-800 text-gray-900 dark:text-white" id="about">
 
         <h2>
-            {summary}
+            {basics.summary}
         </h2>
     </div>
     
