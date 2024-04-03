@@ -9,11 +9,14 @@ Bienvenido a mi portfolio personal. Aquí encontrarás una selección de mis pro
 
 Para clonar y ejecutar este proyecto localmente, utiliza el siguiente comando:
 
+
 \```
+/
 git clone https://github.com/PixelarStudio/cristian-ruiz-portfolio.git
 cd cristian-ruiz-portfolio
 npm install
 npm run dev
+
 \```
 
 ## 🌐 Despliegue en vivo
@@ -30,13 +33,16 @@ Dentro de este proyecto, encontrarás las siguientes carpetas y archivos, que or
 │   └── img/
 │       └── perfil51.png
 │       └── favicon.ico
+│             
 ├── src/
 │   ├── components/Sections
 │   │   └── Footer.astro
 │   │   └── Hero.astro
 │   │   └── NavBar.astro
+│   │          
 │   ├── layouts/
 │   │   └── Layout.astro
+│   │          
 │   └── pages/
 │       └── About.astro
 │       └── Card.astro
@@ -46,11 +52,12 @@ Dentro de este proyecto, encontrarás las siguientes carpetas y archivos, que or
 │       └── Lang.astro
 │       └── Projects.astro
 │       └── Skills.astro      
+│             
 ├────── CustomBackground.astro
 ├────── KeyboardManager.astro
 ├────── ProfileCard.jsx
 ├────── Section.astro
-└── package.json
+└─── package.json
 \```
 
 ## 🧰 Comandos
