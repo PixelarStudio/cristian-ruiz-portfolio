@@ -1,0 +1,42 @@
+---
+import Section from "../components/Section.astro";
+import { certificates, languages } from "@/cv.json";
+const { names, date, issuer, url } = certificates;
+
+---
+
+<Section title="Educación & Certificados" >
+  <div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" id="education">
+    {
+      certificates.map((cert) => (
+        <div class="flex flex-row relative justify-between font-bold text-xs py-3">
+          <ul>
+            <li>
+              <h2 class="font-bold text-md">{cert.names} </h2>
+            </li>
+            <li>
+              <span>{cert.date}</span>
+            </li>
+            <li>
+              <h3>{cert.issuer}</h3>
+            </li>
+          </ul>
+
+          <div class="flex flex-row justify-between">
+            <button class="flex flex-row justify-between text-sm">
+              <a
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Perfil de LinkedIn"
+                class="bg-cyan-700 text-xs text-white py-1 p-1 m-0 rounded-xs shadow-xl w-6/6"
+              >
+                Ver Certificado
+              </a>
+            </button>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>

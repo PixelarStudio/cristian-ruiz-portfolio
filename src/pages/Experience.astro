@@ -1,0 +1,26 @@
+---
+import Section from "../components/Section.astro";
+import { works } from "@/cv.json";
+---
+
+<Section title="Experiencia Laboral" > 
+  {works.map((work)=> (
+
+<div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" id="experience">
+  <div>
+    <div>
+      <div class="flex flex-row justify-between mt-4">
+        <h2 class="font-bold text-md py-3">{work.name}</h2>
+        <p class="text-right my-1 font-light py-2"><span>{work.startDate} - {work.endDate}</span></p>
+
+        </div>
+      
+      </div>
+    <p class="text-right"></p>
+    </div>
+  <h2>{work.summary}</h2>
+  </div>
+
+  ))}
+
+</Section>

@@ -2,11 +2,11 @@
   "basics": {
     "name": "Cristian Javier Ruiz",
     "label": "Desarrollador Frontend React",
-    "image": "../public/img/perfil5.png",
+    "image": "../public/img/perfil51.png",
     "email": "contacto@cristianruiz.com.ar",
     "phone": "(+54) 9 11 2402 5510",
     "url": "https://cristianruiz.com.ar",
-    "summary": "Con un interés profundo por la tecnología y un compromiso constante con el aprendizaje, me especializo en desarrollo web centrado en React, con el objetivo de convertirme en un desarrollador Full Stack. Me dedico a superar nuevos retos utilizando la creatividad y la dedicación para impulsar cada proyecto hacia su presencia en linea.",
+    "summary": "Soy desarrollador web con enfoque en React, trabajando hacia mi meta de ser Full Stack. Mi enfoque está en el aprendizaje constante y en la aplicación práctica de mis conocimientos para mejorar mis proyectos.",
     "location": {
       "address": "",
       "postalCode": "1852",
@@ -27,16 +27,15 @@
       }
     ]
   },
-
   "works": [
     {
       "name": "Ministerio de Seguridad de la Nación",
       "position": "Inspector",
       "url": "",
       "startDate": "2009-08-01",
-      "endDate": null,
+      "endDate": "Actualidad",
       "summary": "Análisis de expedientes y confección de formularios administración de expedientes en el área, realización de tareas operativas de campo."
-  },
+    },
     {
       "name": "Zona PC",
       "position": "Técnico en armado y reparación de PC",
@@ -83,103 +82,76 @@
       "url": "https://www.coderhouse.com/ar/certificados/65ab89800ce5dbf7e7443ffa?lang=es"
     }
   ],
- 
   "skills": [
     {
-      "name": "HTML",
-      "level": "Intermedio",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend"
-      ]
+      "name": "HTML5",
+      "color": "text-orange-500",
+      "description": "Lenguaje de marcado para estructuras Web."
     },
     {
-      "name": "CSS",
-      "level": "Intermedio",
-      "keywords": [
-        "Estilos",
-        "Frontend",
-        "Flex / Grid"
-      ]
+      "name": "CSS3",
+      "color": "text-blue-500",
+      "description": "Lenguaje de estilo para diseñar páginas Web."
     },
     {
       "name": "JavaScript",
-      "level": "Intermedio",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "color": "text-yellow-500",
+      "description": "Lenguaje de programación para interactividad Web."
     },
     {
-      "name": "Tailwind CSS",
-      "level": "Intermedio",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "CSS Framework",
-        "Diseño Responsive"
-      ]
+      "name": "ReactJS",
+      "color": "text-cyan-400",
+      "description": "Biblioteca de JavaScript para construir interfaces de usuario."
     },
     {
-      "name": "Firebase",
-      "level": "Intermedio",
-      "keywords": [
-        "Desarrollo Web",
-        "Firestorage",
-        "Backend",
-        "Aplicaciones Web"
-      ]
+      "name": "Astro",
+      "color": "text-gray-400",
+      "description": "Framework web para construir sitios web orientados al contenido."
     },
     {
-      "name": "Sass",
-      "level": "Intermedio",
-      "keywords": [
-        "Hoja de Estilos en Cascada",
-        "Compilador CSS",
-        "JavaScript",
-        "Servidor"
-      ]
-    },
-    {
-      "name": "WordPress",
-      "level": "Intermedio",
-      "keywords": [
-        "Sistema de Gestión de Contenidos",
-        "CMS",
-        "WordPress",
-        "Content Management System"
-      ]
+      "name": "Vite",
+      "color": "text-violet-400",
+      "description": "Herramienta de construcción moderna para proyectos Web."
     },
     {
       "name": "Git",
-      "level": "Intermedio",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente"
-      ]
+      "color": "text-red-500",
+      "description": "Sistema de control de versiones para seguimiento de cambios en código."
     },
     {
-      "name": "GitHub",
-      "level": "Intermedio",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
-      ]
+      "name": "WordPress",
+      "color": "text-gray-400",
+      "description": "CMS para la creación y gestión de sitios web."
     },
     {
-      "name": "React",
-      "level": "Intermedio",
-      "keywords": [
-        "ReactJs",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "name": "WooCommerce",
+      "color": "text-gray-400",
+      "description": "Plugin de comercio electrónico para WordPress."
+    },
+    {
+      "name": "Bootstrap",
+      "color": "text-gray-400",
+      "description": "Biblioteca multiplataforma para diseño de sitios y aplicaciones web."
+    },
+    {
+      "name": "Material UI",
+      "color": "text-gray-400",
+      "description": "Biblioteca de interfaz de usuario para React."
+    },
+    {
+      "name": "Sass",
+      "color": "text-gray-400",
+      "description": "Metalenguaje de Hojas de Estilo en Cascada (CSS)."
+    },
+    {
+      "name": "Tailwind",
+      "color": "text-teal-400",
+      "description": "Framework CSS para diseño rápido y responsivo."
+    },
+    {
+      "name": "Firebase",
+      "color": "text-[#FFCA28]",
+      "description": "Plataforma para el desarrollo de aplicaciones web y móviles."
     }
   ],
   "languages": [
@@ -192,36 +164,35 @@
       "fluency": "Básico"
     }
   ],
-  
   "projects": [
     {
-      "pname": "MigDan.com.ar",
+      "pname": "MigDan",
       "isActive": true,
       "description": "Sitio de Venta de Piedras",
       "highlights": [
         "Sitio realizado en WordPress",
         "Con Integracion WooCommerce"
       ],
-      "url": "https://migdan.com.ar"
+      "url": "https://MigDan.com.ar"
     },
     {
-      "pname": "ProGamer.com.ar",
+      "pname": "ProGamer",
       "isActive": true,
-      "description": "Sitio de ecommerce de Venta de Articulos de Informatica, ",
+      "description": "Sitio de ecommerce de Venta de Articulos de Informatica",
       "highlights": [
         "Sitio de Informática",
         "Sitio realizado en WordPress"
       ],
-      "url": "https://progamer.com.ar"
+      "url": "https://ProGamer.com.ar"
     },
     {
-      "pname": "PixelarStudio.com",
+      "pname": "Pixelar Studio",
       "isActive": true,
       "description": "Sitio de Servicios de Desarrollo Web",
       "highlights": [
         "Retos para cualquier lenguaje"
       ],
-      "url": "https://pixelarstudio.com"
+      "url": "https://PixelarStudio.com"
     }
   ]
 }

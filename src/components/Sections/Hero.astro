@@ -7,9 +7,9 @@ const { city, region } = location;
 ---
 
 <Section>
-  <div class="container flex justify-between">
+  <div class="container flex justify-between bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
     <div class="info flex flex-col mt-auto">
-      <h1 class="text-4xl">{name}</h1>
+      <h1 class="text-5xl">{name}</h1>
       <h2 class="text-xl py-3">{label}</h2>
 
     </div>
@@ -27,13 +27,12 @@ const { city, region } = location;
       }
     </footer>
 
-    <figure>
-      <img src={image} class="w-32 h-32 rounded-full" alt="{name}" />
+    <figure >
+      <img src={image} class="md:flex md:flex-col md:flex-nowrap w-36 h-36 rounded-full" alt="{name}" />
     </figure>
   </div>
 </Section>
 
-<!-- Estilos con Scope propio. -->
 
 <style>
 
@@ -42,4 +41,4 @@ section {
     margin: 0 auto 72px;
 }
 
-</style>
+</style> 

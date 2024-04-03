@@ -1,0 +1,74 @@
+{
+  "technologies": [
+    {
+      "name": "HTML5",
+      "color": "text-orange-500",
+      "description": "Lenguaje de marcado para estructuras Web."
+    },
+    {
+      "name": "CSS3",
+      "color": "text-blue-500",
+      "description": "Lenguaje de estilo para diseñar páginas Web."
+    },
+    {
+      "name": "JavaScript",
+      "color": "text-yellow-500",
+      "description": "Lenguaje de programación para interactividad Web."
+    },
+    {
+      "name": "ReactJS",
+      "color": "text-cyan-400",
+      "description": "Biblioteca de JavaScript para construir interfaces de usuario."
+    },
+    {
+      "name": "Astro",
+      "color": "text-gray-400",
+      "description": "Framework web para construir sitios web orientados al contenido."
+    },
+    {
+      "name": "Vite",
+      "color": "text-violet-400",
+      "description": "Herramienta de construcción moderna para proyectos Web."
+    },
+    {
+      "name": "Git",
+      "color": "text-red-500",
+      "description": "Sistema de control de versiones para seguimiento de cambios en código."
+    },
+    {
+      "name": "WordPress",
+      "color": "text-gray-400",
+      "description": "CMS para la creación y gestión de sitios web."
+    },
+    {
+      "name": "WooCommerce",
+      "color": "text-gray-400",
+      "description": "Plugin de comercio electrónico para WordPress."
+    },
+    {
+      "name": "Bootstrap",
+      "color": "text-gray-400",
+      "description": "Biblioteca multiplataforma para diseño de sitios y aplicaciones web."
+    },
+    {
+      "name": "Material UI",
+      "color": "text-gray-400",
+      "description": "Biblioteca de interfaz de usuario para React."
+    },
+    {
+      "name": "Sass",
+      "color": "text-gray-400",
+      "description": "Metalenguaje de Hojas de Estilo en Cascada (CSS)."
+    },
+    {
+      "name": "Tailwind",
+      "color": "text-teal-400",
+      "description": "Framework CSS para diseño rápido y responsivo."
+    },
+    {
+      "name": "Firebase",
+      "color": "text-[#FFCA28]",
+      "description": "Plataforma para el desarrollo de aplicaciones web y móviles."
+    }
+  ]
+}

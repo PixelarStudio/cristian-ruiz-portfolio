@@ -1,28 +1,34 @@
 ---
-import About from "@/components/Sections/About.astro";
-import Education from "@/components/Sections/Education.astro";
-import Experience from "@/components/Sections/Experience.astro";
+import About from "@/pages/About.astro";
+import Education from "@/pages/Education.astro";
+import Experience from "@/pages/Experience.astro";
 import Hero from "@/components/Sections/Hero.astro";
 import Layout from "@/layouts/Layout.astro";
-import Projects from "@/components/Sections/Projects.astro";
-import Skills from "@/components/Sections/Skills.astro";
+import Projects from "@/pages/Projects.astro";
+import Skills from "@/pages/Skills.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
-import CustomBackground from "@/components/CustomBackground.astro"
-import Lang from "@/components/Sections/Lang.astro";
+import CustomBackground from "@/components/CustomBackground.astro";
+import Lang from "@/pages/Lang.astro";
+import NavBar from "@/components/Sections/NavBar.astro";
+import Footer from "@/components/Sections/Footer.astro";
+
 ---
 
 <Layout title="Cristian Ruiz Portfolio">
-  <main >
-    <Hero />
-    <About />
-    <Experience />
-    <Education />
-	<Lang />
-    <Projects />
-    <Skills />
-</main>
-<KeyboardManager />
-<CustomBackground />
+  
+	<CustomBackground />
+  <NavBar />
+  <main>
+    <Hero id="hero"/>
+    <About id="about"/>
+    <Experience id="experience" />
+    <Education id="education"/>
+    <Lang  id="lang"/>
+    <Projects id="projects"/>
+    <Skills id="skills"/>
+  </main>
+  <Footer />
+  <KeyboardManager />
 </Layout>
 
 <style>
@@ -31,6 +37,4 @@ import Lang from "@/components/Sections/Lang.astro";
     margin: auto;
     width: 100%;
   }
-
-  
 </style>

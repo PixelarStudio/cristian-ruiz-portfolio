@@ -1,0 +1,26 @@
+---
+import { projects } from "@/cv.json";
+import Section from "../components/Section.astro";
+---
+
+<Section title="Proyectos"  >
+  <div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" id="projects">
+    
+      {projects.map((proj) => 
+      
+      <div class="py-4 mt-3 font-bold shadow-sm">
+        <p>{proj.pname}</p>
+        </div>
+        <div class="py-3">
+          <p>{proj.description}</p>
+        </div>
+      
+      <div class="py-1">
+        <a target="_blank" rel="noopener"  href={proj.url}><span class="text-gray-500 text-">{proj.url}</span></a>
+       </div>
+      
+      
+      )}
+ 
+  </div>
+</Section>
