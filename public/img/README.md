@@ -1,7 +1,7 @@
 
 # Cristian Ruiz Portfolio
 
-![Cristian Javier Ruiz](../public/img/perfil5.png)
+![Cristian Javier Ruiz](../public/img/perfil51.png)
 
 Bienvenido a mi portfolio personal. Aquí encontrarás una selección de mis proyectos y contribuciones más relevantes como Desarrollador Frontend React. Mi objetivo es crear experiencias web interactivas y modernas que impulsen cada proyecto hacia su máximo potencial en línea.
 
@@ -9,7 +9,7 @@ Bienvenido a mi portfolio personal. Aquí encontrarás una selección de mis pro
 
 Para clonar y ejecutar este proyecto localmente, utiliza el siguiente comando:
 
-\```sh
+\```
 git clone https://github.com/PixelarStudio/cristian-ruiz-portfolio.git
 cd cristian-ruiz-portfolio
 npm install
@@ -19,8 +19,6 @@ npm run dev
 ## 🌐 Despliegue en vivo
 
 [![Open in GitHub Pages](https://github.com/pages/badge.svg)](https://pixelarstudio.github.io/cristian-ruiz-portfolio)
-[![Open in Vercel](https://vercel.com/button)](https://cristianruiz-portfolio.vercel.app)
-[![Open in Netlify](https://www.netlify.com/img/deploy/button.svg)](https://cristianruiz-portfolio.netlify.app)
 
 ## 📂 Estructura del Proyecto
 
@@ -30,15 +28,28 @@ Dentro de este proyecto, encontrarás las siguientes carpetas y archivos, que or
 /
 ├── public/
 │   └── img/
-│       └── perfil5.png
+│       └── perfil51.png
+│       └── favicon.ico
 ├── src/
-│   ├── components/
+│   ├── components/Sections
+│   │   └── Footer.astro
 │   │   └── Hero.astro
-│   │   └── About.astro
+│   │   └── NavBar.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
+│       └── About.astro
+│       └── Card.astro
+│       └── Education.astro
+│       └── Experience.astro
 │       └── index.astro
+│       └── Lang.astro
+│       └── Projects.astro
+│       └── Skills.astro      
+├────── CustomBackground.astro
+├────── KeyboardManager.astro
+├────── ProfileCard.jsx
+├────── Section.astro
 └── package.json
 \```
 
@@ -53,9 +64,6 @@ Todos los comandos se ejecutan desde la raíz del proyecto, a través de un term
 | `npm run build`   | Construye el sitio para producción             |
 | `npm run preview` | Previsualiza la construcción localmente        |
 
-## 📚 Aprende Más
-
-Para más información sobre el desarrollo frontend y React, visita la [documentación de React](https://reactjs.org/docs/getting-started.html). También puedes unirte a comunidades y foros relacionados para mantenerse actualizado con las últimas tendencias y mejores prácticas en el desarrollo web.
 
 ## 🤝 Conecta conmigo
 
