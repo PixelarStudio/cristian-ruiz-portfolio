@@ -27,6 +27,7 @@
       }
     ]
   },
+
   "works": [
     {
       "name": "Ministerio de Seguridad de la Nación",
@@ -45,6 +46,7 @@
       "summary": "Atención al cliente. Mantenimiento de la red.   Reparaciones y Actualizaciones de equipos, asesoramiento en software y hardware."
     }
   ],
+
   "education": [
     {
       "institution": "Escuela de Educación Secundaria N°1 Dr. Alfredo L. Palacios",
@@ -56,6 +58,7 @@
       "score": "8.9"
     }
   ],
+
   "certificates": [
     {
       "names": "Desarrollo Web",
@@ -82,6 +85,7 @@
       "url": "https://www.coderhouse.com/ar/certificados/65ab89800ce5dbf7e7443ffa?lang=es"
     }
   ],
+
   "skills": [
     {
       "name": "HTML5",
@@ -109,11 +113,6 @@
       "description": "Framework web para construir sitios web orientados al contenido."
     },
     {
-      "name": "Vite",
-      "color": "text-violet-400",
-      "description": "Herramienta de construcción moderna para proyectos Web."
-    },
-    {
       "name": "Git",
       "color": "text-red-500",
       "description": "Sistema de control de versiones para seguimiento de cambios en código."
@@ -127,16 +126,6 @@
       "name": "WooCommerce",
       "color": "text-gray-400",
       "description": "Plugin de comercio electrónico para WordPress."
-    },
-    {
-      "name": "Bootstrap",
-      "color": "text-gray-400",
-      "description": "Biblioteca multiplataforma para diseño de sitios y aplicaciones web."
-    },
-    {
-      "name": "Material UI",
-      "color": "text-gray-400",
-      "description": "Biblioteca de interfaz de usuario para React."
     },
     {
       "name": "Sass",
@@ -154,6 +143,7 @@
       "description": "Plataforma para el desarrollo de aplicaciones web y móviles."
     }
   ],
+
   "languages": [
     {
       "language": "Español",
@@ -164,6 +154,7 @@
       "fluency": "Básico"
     }
   ],
+  
   "projects": [
     {
       "pname": "MigDan",

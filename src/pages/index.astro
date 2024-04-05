@@ -14,22 +14,25 @@ import Footer from "@/components/Sections/Footer.astro";
 
 ---
 
+
 <Layout title="Cristian Ruiz Portfolio">
+
+
+      <CustomBackground />
+      <NavBar />
+      <main>
+        <Hero id="hero"/>
+        <About id="about"/>
+        <Experience id="experience" />
+        <Education id="education"/>
+        <Lang  id="lang"/>
+        <Projects id="projects"/>
+        <Skills id="skills"/>
+      </main>
+      <Footer />
+      <KeyboardManager />
+    </Layout>
   
-	<CustomBackground />
-  <NavBar />
-  <main>
-    <Hero id="hero"/>
-    <About id="about"/>
-    <Experience id="experience" />
-    <Education id="education"/>
-    <Lang  id="lang"/>
-    <Projects id="projects"/>
-    <Skills id="skills"/>
-  </main>
-  <Footer />
-  <KeyboardManager />
-</Layout>
 
 <style>
   main {

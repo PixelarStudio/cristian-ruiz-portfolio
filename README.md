@@ -27,7 +27,6 @@ npm run dev
 Dentro de este proyecto, encontrarás las siguientes carpetas y archivos, que organizan el código fuente y los recursos del portfolio:
 
 ```text
-/
 ├── public/
 │   └── img/
 │       └── perfil5.png
