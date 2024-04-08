@@ -1,13 +1,13 @@
 ---
 import Section from "../components/Section.astro";
-import { certificates, languages } from "@/cv.json";
+import { certificates } from "@/cv.json";
 ---
 
 <Section title="Educación & Certificados" >
   <div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" id="education">
     {
       certificates.map((cert) => (
-        <div class="flex flex-row relative justify-between font-bold text-xs py-3">
+        <div class="flex flex-row relative justify-between font-bold py-3">
           <ul>
             <li>
               <h2 class="font-bold text-md">{cert.names} </h2>
