@@ -1,10 +1,10 @@
 ---
-import Section from "../components/Section.astro";
+import Section from "@/components/Section.astro";
 import { languages } from "@/cv.json";
 
 ---
 <Section title="Idioma" > 
-    <div class="mt-2 py-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white" id="lang">
+    <div class="mt-2 py-5 bg-white" id="lang">
         {
           languages.map((lang) => (
             <>

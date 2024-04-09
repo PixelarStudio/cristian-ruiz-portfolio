@@ -1,5 +1,5 @@
 ---
-import Section from "../Section.astro";
+import Section from "@/components/Section.astro";
 ---
 
 <Section>
@@ -9,7 +9,6 @@ import Section from "../Section.astro";
         <img class="w-12 h-12" src="/img/crlogo.png" alt="Logo de CR">
       </a>
       <div class="hidden md:flex space-x-4">
-        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="/">Inicio</a>
         <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#about">Acerca de Mi</a>
         <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#experience">Experiencia Laboral</a>
         <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#education">Educación</a>
@@ -24,7 +23,6 @@ import Section from "../Section.astro";
       </button>
     </div>
     <div class="mobile-menu hidden md:hidden">
-      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="/">Inicio</a>
       <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#about">Acerca de Mi</a>
       <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#experience">Experiencia Laboral</a>
       <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#education">Educación</a>
@@ -39,11 +37,35 @@ import Section from "../Section.astro";
   document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuButton = document.querySelector('nav > div > button');
     const mobileMenu = document.querySelector('.mobile-menu');
+  
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+  
+    // Selector para todos tus enlaces de navegación
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Previene el comportamiento predeterminado de desplazamiento
+        let targetId = this.getAttribute('href');
+        let targetElement = document.querySelector(targetId);
+  
+        if (targetElement) {
+          let targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+          let navbarHeight = document.querySelector('nav').offsetHeight;
+          let offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2) - navbarHeight;
+  
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
   });
-</script>
+  </script>
+  
 
 <style>
   /* Aquí podrías agregar estilos personalizados si es necesario */

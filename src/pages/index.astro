@@ -6,7 +6,6 @@ import Hero from "@/components/Sections/Hero.astro";
 import Layout from "@/layouts/Layout.astro";
 import Projects from "@/pages/Projects.astro";
 import Skills from "@/pages/Skills.astro";
-import KeyboardManager from "@/components/KeyboardManager.astro";
 import CustomBackground from "@/components/CustomBackground.astro";
 import Lang from "@/pages/Lang.astro";
 import NavBar from "@/components/Sections/NavBar.astro";
@@ -18,7 +17,7 @@ import Footer from "@/components/Sections/Footer.astro";
 
 
       <CustomBackground />
-      <NavBar client:load />
+      <NavBar />
       <main>
         <Hero id="hero"/>
         <About id="about"/>
@@ -27,9 +26,8 @@ import Footer from "@/components/Sections/Footer.astro";
         <Lang  id="lang"/>
         <Projects id="projects"/>
         <Skills id="skills"/>
+        <Footer />
       </main>
-      <Footer />
-      <KeyboardManager />
     </Layout>
   
 
