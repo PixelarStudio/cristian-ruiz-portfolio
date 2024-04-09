@@ -1,43 +1,22 @@
 ---
-import { basics } from "@/cv.json"
-
+import { basics } from "@/cv.json";
 import Section from "@/components/Section.astro";
 const { name, label, image, email } = basics;
 ---
 
 <Section>
-  <div class="container flex justify-between bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
-    <div class="info flex flex-col mt-auto">
-      <h1 class="text-5xl">{name}</h1>
-      <h2 class="text-xl py-3">{label}</h2>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col sm:flex-row justify-center gap-8 items-center">
+      
+      <figure class="w-24 h-24 sm:w-36 sm:h-36 rounded-full overflow-hidden">
+        <img src={image} alt={name} class="w-full h-full object-cover" />
+      </figure>
+
+      <div class="text-center sm:text-left">
+        <h1 class="text-3xl sm:text-5xl">{name}</h1>
+        <h2 class="text-lg sm:text-xl py-3">{label}</h2>
+      </div>
 
     </div>
-
-    <footer>
-      {
-        email && (
-          <a
-            href={`mailto: ${email}`}
-            title={`Enviar un Correo Electronico a ${name} al correo ${email}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-        )
-      }
-    </footer>
-
-    <figure >
-      <img src={image} class="md:flex md:flex-col md:flex-nowrap w-36 h-36 rounded-full" alt="{name}" />
-    </figure>
   </div>
 </Section>
-
-
-<style>
-
-section {
-    max-width: 700px;
-    margin: 0 auto 72px;
-}
-
-</style> 

@@ -3,77 +3,41 @@ import Section from "../Section.astro";
 ---
 
 <Section>
-  <nav
-    class="fixed top-0 left-0 w-screen flex flex-row justify-between z-50 py-1 px-2 bg-gray-100 shadow-lg backdrop-blur-lg backdrop-filter backdrop-opacity-60 h-auto"
-  >
-    <div class="max-w-6xl mx-auto px-4">
-        
-        <div class="flex justify-between">
-          <div>
-              <a href="/">
-                <img class="w-12 h-12 p-1 m-2 opacity-100" src="/img/crlogo.png" alt="Logo de CR" srcset="">
-            </a>
-          </div>
-        <!-- Menú principal MD y superior -->
-        <div class="hidden md:flex space-x-1 items-center">
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="/">Inicio</a>
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#about">Acerca de Mi</a>
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#experience">Experiencia Laboral</a>
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#education">Educación</a>
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#lang">Idioma</a>
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#projects">Proyectos</a>
-          <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#skills">Habilidades</a>
-        </div>
-
-        <!-- Botón de menú móvil -->
-        <div class="md:hidden flex items-center">
-          <button class="mobile-menu-button">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
+  <nav class="fixed top-4 left-20 right-20 rounded-md z-50 py-1 px-2 bg-gray-100 shadow-lg backdrop-blur-lg backdrop-filter backdrop-opacity-60">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <a href="/">
+        <img class="w-12 h-12" src="/img/crlogo.png" alt="Logo de CR">
+      </a>
+      <div class="hidden md:flex space-x-4">
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="/">Inicio</a>
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#about">Acerca de Mi</a>
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#experience">Experiencia Laboral</a>
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#education">Educación</a>
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#lang">Idioma</a>
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#projects">Proyectos</a>
+        <a class="py-5 px-3 hover:bg-gray-200 font-semibold rounded-md text-slate-700" href="#skills">Habilidades</a>
       </div>
+      <button class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
     </div>
-    <!-- Menú móvil -->
     <div class="mobile-menu hidden md:hidden">
       <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="/">Inicio</a>
-      <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">Acerca de Mi</a>
-      <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-200">Experiencia Laboral</a>
-      <a href="#education" class="block py-2 px-4 text-sm hover:bg-gray-200">Educación</a>
-      <a href="#lang" class="block py-2 px-4 text-sm hover:bg-gray-200">Idioma</a>
-      <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-200">Proyectos</a>
-      <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-200">Habilidades</a>
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#about">Acerca de Mi</a>
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#experience">Experiencia Laboral</a>
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#education">Educación</a>
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#lang">Idioma</a>
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#projects">Proyectos</a>
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200" href="#skills">Habilidades</a>
     </div>
   </nav>
 </Section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const navbar = document.getElementById("navbar");
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    window.addEventListener("scroll", () => {
-      // Tu lógica existente para cambiar el color basada en el scroll
-    });
-
-    navLinks.forEach((link) => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
-          const offsetCenter = offsetTop - window.innerHeight / 2 + targetElement.offsetHeight / 2;
-          window.scrollTo({
-            top: offsetCenter,
-            behavior: "smooth",
-          });
-        }
-      });
-    });
-
-    // Añadido controlador para el botón de menú móvil
-    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.querySelector('nav > div > button');
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
@@ -82,5 +46,5 @@ import Section from "../Section.astro";
 </script>
 
 <style>
-  /* Aquí puedes agregar estilos adicionales si es necesario */
+  /* Aquí podrías agregar estilos personalizados si es necesario */
 </style>
