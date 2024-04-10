@@ -87,5 +87,20 @@ const img = "../public/favicon.ico"
     text-wrap: pretty;
   }
 
+  @media print {
+  body {
+    font-size: 12pt;
+  }
+  .no-print {
+    display: none;
+  }
+  /* Ajusta el tamaño de la página para A4 */
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  /* Añade aquí más estilos específicos para la impresión */
+}
+
   
 </style>
