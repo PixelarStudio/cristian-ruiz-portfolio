@@ -1,0 +1,70 @@
+---
+import Section from "../components/Section.astro";
+
+const social = [
+  {
+    name: "GitHub",
+    url: "https://github.com/PixelarStudio",
+    icon: "./public/social/github.svg",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/cj-ruiz/",
+    icon: "./public/social/LinkedIn.svg",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/studio.pixelar/?next=%2F",
+    icon: "./public/social/Instagram.svg",
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/pixelarstudios/",
+    icon: "./public/social/Facebook.svg",
+  },
+  {
+    name: "WhatsApp",
+    url: "https://wa.me/541124025510/?text=¡Hola!%20Como%20Estas?%20Me%20gustaría%20saber%20más%20sobre%20sus%20servicios.",
+    icon: "./public/social/WhatsApp.svg",
+  },
+];
+
+---
+
+
+<Section>
+
+    <div class="flex gap-4 logo-container social-cont">
+        {
+          social.map((soc) => (
+            <div>
+              <a href={soc.url} rel="noopenner noreferrer" target="_blank"> <img class="w-9 h-9 m-2 logo grayscale" src={soc.icon} alt={soc.name} data-color={soc.icon}/></a>
+             
+            </div>
+          ))
+        }
+      </div>
+</Section>
+
+
+<style>
+
+.logo {
+    transition: filter 0.3s ease; 
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.logo:hover {
+    filter: none; 
+}
+
+.social-cont {
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+</style>

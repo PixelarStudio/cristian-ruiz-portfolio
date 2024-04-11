@@ -1,0 +1,23 @@
+---
+const imgTop = "../public/social/Top.svg";
+const altName = "Top Logo";
+---
+
+<div class="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 flex flex-row-reverse top-button" style="display: none;">
+    <a href="#top"><img class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow duration-200 ease-in-out" src={imgTop} alt={altName} /></a>
+</div>
+  
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const btnTop = document.querySelector('.top-button');
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btnTop.style.display = "block";
+        } else {
+          btnTop.style.display = "none";
+        }
+      };
+    });
+  </script>
+  
