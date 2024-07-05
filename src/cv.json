@@ -34,8 +34,8 @@
       "position": "Inspector",
       "url": "",
       "startDate": "2009-08-01",
-      "endDate": "Actualidad",
-      "summary": "Análisis de expedientes y confección de formularios administración de expedientes en el área, realización de tareas operativas de campo."
+      "endDate": "2024-07-31",
+      "summary": "Análisis de expedientes, confección de formularios, administración de expedientes en el área, realización de tareas operativas de campo, inspecciones, control de stock, control de transporte, investigación de empresas, analisis de informes trimestrales..."
     },
     {
       "name": "Zona PC",
@@ -159,7 +159,7 @@
     {
       "pname": "MigDan",
       "isActive": true,
-      "description": "Sitio de Venta de Piedras",
+      "description": "Sitio de Venta de Amuletos de Energía y Bienestar",
       "highlights": [
         "Sitio realizado en WordPress",
         "Con Integracion WooCommerce"
